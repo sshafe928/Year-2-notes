@@ -1,0 +1,14 @@
+Advanced array methods
+ - manipulating data is highly important
+ - master arrays and methods and rejex
+ - pivotal for websties databaese and web appllications
+
+Mastering arrays
+    -Ternaries 
+        - like a mini if statement
+        - {conditional ? truepath : falsepath}
+    Spread operator
+        -(...) 
+        -will iterate through and add all values from an array-like object
+        
+

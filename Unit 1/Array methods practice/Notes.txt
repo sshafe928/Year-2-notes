@@ -10,5 +10,33 @@ Mastering arrays
     Spread operator
         -(...) 
         -will iterate through and add all values from an array-like object
-        
+        -spreads the elements(methods and properties) of an array
+    Mapping arrays
+        -when you have an array with several items that you want to break down the best way is .map()
+        - .map() is an array method that will go through each items and do a thing
+        - .map() returns a whole new array when its finished
+        -other methods such as forEach() do not create new arrays and instead just paste content for the existing array
+    Anatomy of .map()
+        -the first part of a map method is a variable name that will represent each item from your array
+        - this variable name should be named as the singular or the array
+            - people -> person
+            - books -> book
+        - next you can destructure your item if you like, this is not required but makes setup easier
+            -const {name, age, job, shirtColor, drink, pet} = person;
+        -lastly you need to return the object bck to the map
+            -return {...person, shirtColor: 'tye-dye'}
 
+    .forEach()
+        -doesnt return a new array, every modification effects the origional array
+        you have 3 values to work with: value(item), index(position), array(whole)
+        - the last export for a forEach loop is undefined this really messes with return loops
+        - instead you can have a condiitonal that acts depending on the values returned
+        - if a list is missing variables they get the definition of undefined, you can deal witht hem by ->
+                -counting occurences
+                -breaking up the array into smaller arrays
+                -printing out every name that starts with an A
+
+
+    .filter()
+        -filter is how you can remove certain items from yuor array
+        it will go throuhj each item and comapre them to a conditional that you set up, true gets added and false doesnt

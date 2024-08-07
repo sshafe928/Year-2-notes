@@ -40,3 +40,34 @@ Mastering arrays
     .filter()
         -filter is how you can remove certain items from yuor array
         it will go throuhj each item and comapre them to a conditional that you set up, true gets added and false doesnt
+
+    .(each)
+    const numbers = [-1, -2,]
+    console.log(
+        number.every((num) => num > 100)
+    )
+
+    - checks to make sure that every value meets the conditional
+    - returns a boolean
+
+    .some()
+    - similar to .every, it checks if some of them are true
+    - as long as one is true it will return true
+
+
+    .reduce
+    - a method that adds to an output it finds the accumulation of numbers
+    - this does nothing for non number values, this is very use ful for creating updates numbers of items
+    - items in your cart, money raised by the class
+
+
+    const array = [2,4,6,8,10]
+    array.reduce((accumulator, currentValue,currentIndex, array) =>{
+        return accumulator + currentValue
+    }, 20)
+    accumulator refers to total
+    current value, is where it curretnyly is
+    current index is the index of the value
+    array gives yoyu the entirety of the array
+    .reduce(total, current, index,arr) =>.....
+    

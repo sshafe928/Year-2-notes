@@ -39,3 +39,5 @@
   - Counting occurrences
   - Breaking up the array into smaller arrays
   - Printing out every name that starts with an "A"
+
+

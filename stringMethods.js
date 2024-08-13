@@ -219,7 +219,7 @@ let newArray = inputData.map((data) => {
     
     }
     
-});
+);
 
 // console.log(newArray)
 

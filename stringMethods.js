@@ -201,65 +201,68 @@ let inputData =
     {"id":199,"first_name":"Ty","last_name":"Redolfi","email":"tredolfi5i@nifty.com","gender":"Male","ip_address":"71.133.186.182"},
     {"id":200,"first_name":"Goldie","last_name":"Halligan","email":"ghalligan5j@ucla.edu","gender":"Female","ip_address":"35.65.241.173"}
 ]
+// Task 1: Full Name Construction
+function getFullNames(users) {
+    return users.map((user) => {
+        const { first_name, last_name } = user;
+        return first_name + " " + last_name;
+    });
+}
 
-// let newArray = inputData.map((data) => {
-//     const {first_name, last_name} = data;
-//     return first_name + " " + last_name
-// });
+// Task 2: Email Providers Extraction
+function getEmailProviders(users) {
+    const domainSet = new Set();
+    users.forEach(user => {
+        const { email } = user;
+        const domain = email.split('@')[1];
+        if (domain) {
+            domainSet.add(domain.split('.')[0]);
+        }
+    });
+    return Array.from(domainSet);
+}
 
-// console.log(newArray)
+// Task 3: Gender Count
+function countGenders(users) {
+    const genderCount = [];
+    users.forEach((user) => {
+        const { gender } = user;
+        if (gender in genderCount) {
+            genderCount[gender]++;
+        } else {
+            genderCount[gender] = 1;
+        }
+    });
+    return genderCount;
+}
 
-// Task 2
+// Task 4: IP Address Filtering
+function filterIPByRange(users, startIP, endIP) {
+    const start = startIP.split(".").join(" ");
+    const end = endIP.split(".").join(" ");
 
-let newArray = inputData.map((data) => {
-    let domains =[]
-    const {email} = data;
-    domain = email.split("@")
-    domain = domain[1].split(".")
-    
-    }
-    
-);
+    return users.filter(user => {
+        const userIP = user.ip_address.split(".").join(" ");
 
-// console.log(newArray)
+        if (parseInt(userIP) >= parseInt(start) && parseInt(end) >= parseInt(userIP)) {
+            return true;
+        }
+        return false;
+    });
+}
 
-// Task 3
-// let genders = []
+// Task 5: Full Names with Initials
+function getFullNamesWithInitials(users) {
+    return users.map((user) => {
+        const { first_name, last_name } = user;
+        const initials = first_name.charAt(0) + last_name.charAt(0);
+        return first_name + " " + last_name + " (" + initials + ")";
+    });
+}
 
-// inputData.forEach((data)=>{
-//     data.gender in genders ? genders[data.gender]++ : genders[data.gender] = 1 ;
-
-// })
-
-// console.log(genders)
-
-// Task 4
-
-// function filterIP(users, startIP, endIP){
-//     const start = startIP.split(".").join(" ");
-//     const end = endIP.split(".").join(" ");
-
-//     return users.filter(user => {
-//         const userIP = user.ip_address.split(".").join(" ");
-
-//         if(parseInt(userIP) >= parseInt(start) && parseInt(end) >= parseInt(userIP)){
-//             return true;
-//         }
-//         return false;
-//     })
-// }
-
-// const filterUsers = filterIP(inputData,  "7.202.9.201", "233.818.12.27")
-
-
-// console.log(filterUsers)
-
-// Task 5
-// let newArray = inputData.map((data) => {
-//         const {first_name, last_name} = data;
-//         initials = first_name.charAt(0) + last_name.charAt(0)
-//         return first_name + " " + last_name + " (" + initials +")"
-
-//     });
-    
-//     console.log(newArray)
+// Example usage:
+console.log("Full Names:", getFullNames(inputData));
+console.log("Email Providers:", getEmailProviders(inputData));
+console.log("Gender Count:", countGenders(inputData));
+console.log("Filtered IP Users:", filterIPByRange(inputData, "7.202.9.201", "233.818.12.27"));
+console.log("Full Names with Initials:", getFullNamesWithInitials(inputData));

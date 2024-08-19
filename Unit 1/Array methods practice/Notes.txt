@@ -113,3 +113,85 @@ Agile principles
     8. agile processes promote sustainable development. The sopnsors dvelopers,adn users should be able to maintain a constant pace indefinitly
     9. continuous attention to technical ecellence and good design enhances agility.
 
+
+1. Intro to Node js
+
+    - node is an enviornment that allows us to run JS outside of the browser
+    - built using chrom's V8 JS engine
+    - node has a large and great community that is adding to the libraries available
+
+
+differences from browser to node
+
+    - there is no DOM
+    - there is no window object to reference
+    - this runs server side appllications
+    - great for filesystem
+    - they use commonJS so we dont need to worry about ES6 or browser compatability
+
+    Installing NODEJS
+
+    -    node is already installed on these computers
+    -   if you are going to install this on your own computer you should use LTS. this is becasue it is the stable build w3hat will be updated when needed
+
+    REPL& CLI
+    
+        - REPL(read eval print loop) - is a terminal command that lets us use node
+        CLI(Command LIne Interface) - is the better way that we can use node
+
+
+        Starting REPL
+         - REPL i slike having a small IDE in your terminal you can create variables and call then in the terminal but this is very inefficient and just for playing around
+         - to exit repl press ctrl + c
+
+         CLI 
+         - this is the version that runs js files and complies them for the terminal
+         - if you type in 'node filename.js' the file will be compiled and run without the need for a browser engine
+
+         clear - clears terminal
+         Cd- change directory
+
+         PS C:\Users\sshafe928\Documents\GitHub\Year-2-notes> cd Distro 
+         -- gets yuo into Distro
+        PS C:\Users\sshafe928\Documents\GitHub\Year-2-notes\Distro> cd ../
+         -- gets you out of the Distro folder
+        PS C:\Users\sshafe928\Documents\GitHub\Year-2-notes> cd Distro/Test
+         -- gets you into test in the distro folder
+        PS C:\Users\sshafe928\Documents\GitHub\Year-2-notes\Distro\Test> 
+
+
+        systeminfo - shows you all info about the computerand stuff
+
+        PS C:\Users\sshafe928\Documents\GitHub\Year-2-notes\Distro\Test> ping "www.freecodecamp.org"
+        -- requesting information from the website or ip address, gives you the ip address and statistics or stuff like that
+
+        mkdir - makes  a directory or folder
+
+        PS C:\Users\sshafe928\Documents\GitHub\Year-2-notes\Distro\Test> echo My name is Sabrina Shafer > note.txt -- makes a txt file with my name is sab in it
+        make any file you want
+
+        PS C:\Users\sshafe928\Documents\GitHub\Year-2-notes\Distro\Test> del note.txt --- delets note.txt
+
+    globals
+        -just like JS there are several global variables that we are able to use anywhere
+        -for instance 'console' we dont need to define this, node already n=knows
+        -we call these Globals
+
+        a few globals:
+
+        __dirname 
+                - path to current directory
+        __filename
+                - the current file name
+        require
+                - alows us to use modules
+        module
+                - info about the current module
+        process
+                - info about the env where the program is being executed
+
+    modules
+        -modules are Node's way of saying files, EVERY . JS FILE IS A module
+        - we can use these in ES6 but we use the import Command
+        node uses 'require' instead of import 
+

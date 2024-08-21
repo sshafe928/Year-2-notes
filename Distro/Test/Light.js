@@ -1,1 +1,0 @@
-console.log("beware of the deathnote")

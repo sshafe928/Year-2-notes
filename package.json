@@ -1,0 +1,20 @@
+{
+  "name": "year-2-notes",
+  "version": "1.0.0",
+  "description": "Year 2 notes Node - React",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon NodeJS/globals.js"
+  },
+  "author": "Sabrina Shafer <sabrinashafer321@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "Node",
+    "Notes",
+    "JS"
+  ],
+  "dependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

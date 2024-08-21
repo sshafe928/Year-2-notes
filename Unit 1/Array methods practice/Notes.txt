@@ -195,3 +195,13 @@ differences from browser to node
         - we can use these in ES6 but we use the import Command
         node uses 'require' instead of import 
 
+
+    OS module
+        - the os module is used to return information on the computer and system information on the PC 
+            -const os = require('os')
+
+    Path module
+     - the path module is used for a navigating the directions and fie paths
+      - this also includes mehtods that will clean up paths to avioud errors
+        - const path = require('paths')
+

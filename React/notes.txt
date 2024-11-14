@@ -81,4 +81,13 @@ parts of a component
     arrow function:
     this is the name of the component and will also hold any props that are passed down
 
+    any states, functins, variables
+        - before the retrun the react component you can define any js you want to use
+    the return statement
+        - this will house what you want to be rendered into the html
+    export component
+        - this just sends off the react components to the dom renderer
+
     
+
+

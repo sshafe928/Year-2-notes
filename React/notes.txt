@@ -1,0 +1,37 @@
+Introduction to react- 
+ React is a front end library
+
+ How to start
+    -creating a react app is a large task that we can use toolchains to do for us
+    - there are a lot of toolchains that serve different purposes but the biggest ones are:
+        - create react app
+        - next.js
+        -vue
+        - gatsby
+        -parcel
+
+        They download not only react but stuff like ejs and ejs layout (dependng on how they are structured)
+
+History of react:
+    -react was released by facebook as an open soucre project in 2013. over the years it gained widespread adoption in the web development community due to simplicity, performance and flexibility
+    - react maintained by facebook and a community of developers, and it has gone through serveral major versions, with react 18 being the latest at the time of this lesson
+
+
+Uses of React:
+    -react is widely used int the web development fro creating interavtive and dynamic user interfaces. it is particualrly suitable for single-page applications but can be used in various contexts including:
+        -Wbesites -
+            -react is used to build modern, responsive websites with interactive features
+
+        web applications -
+            -many web applications such as social media platforms, content management systems, and e-commerce sites, use react for its performace and flexibility
+        mobile apps:
+            - react native a framework based on react is used for developing cross platform mobile appllications for ios and andriod
+
+        Interactive dashboards: react is well suited for building data visualization and interactive dashboard applications
+
+        Games:
+            -some web-based games are built using react for theier user interfaces
+
+npm i create-react-app
+
+npx create-react-app <file name>

@@ -35,3 +35,50 @@ Uses of React:
 npm i create-react-app
 
 npx create-react-app <file name>
+
+JSX:
+
+    jsx stands for javascrit expression and runs perfectly fine in a JS file too
+    this langugae allows us to typle html style code in a js format
+    the biggest advantage is allowing us to do calcularions or conditional checking alongside the page rendering
+
+    When creating components or anything that is rendered with the index.ks filr you can instead use jsx
+    jsx should only be used with files that are capitilized
+    you can use js or jsx but the benefit to jsx os the use of emmet and auto-fill of the html elements
+
+    using code in jsx
+
+    the way to code in jsx is surroundig it with {  }
+    this informs the code to treat everything inside of the brackets as regular js
+    if you want anything to render then you need to return it from the component function
+    lastly just like js when you return something the code stop     
+
+    using {  } for js
+
+    function Test(){
+    const src = "https://res.cloudinary.com/dy2nnbnek/image/upload/v1731557752/pet-adoption-site/rqntnynmpyem82o73njb.jpg"
+    const w = "250", h="500", alt="german Shepherd"
+    return(
+        <>
+        <img src={src} width={w} height={h} alt={alt} />
+        </>
+    )
+}
+
+
+Intro to components
+    react is written in jsx this is a special form of html
+    components are differenciated from the rest of the html tags by using capitals
+    components can be used for anything similar that you want to partition into smaller more managable parts
+
+creating new components
+    when creating components it is best that they are named singular nouns : Header, Button, Book
+    components should also be kept in a components folder
+
+parts of a component
+    imports:
+    typically useState, useEffect, or other react hook
+    arrow function:
+    this is the name of the component and will also hold any props that are passed down
+
+    

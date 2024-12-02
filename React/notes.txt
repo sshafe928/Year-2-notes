@@ -90,4 +90,54 @@ parts of a component
 
     
 
+Components: small chunks of code
 
+Importing components
+    - once you have created your components you need to import them on the main app page
+    - you can rename them if you like by using the 'as' keyword
+
+    -import {default as Topics} from "../components/question" 
+
+    old way:
+    import{Homepgae as Home, CartPage as Cart, ErrorPage as Error} from "../components/";
+
+Using components
+
+    -when you want to use a componetnt you must type it out like a regular html tag but you must use a capital letter
+    - capital letters let the react library know to compile the pcde
+    - lastly remember that you always need to close all of your react components 
+        <Movie /> and <Form />
+
+
+useState
+ -usestate stores a value and returns it to the user similar to a variables
+        - setState(newState)
+- updating the setState causes a re-render of you page
+
+    const [state, setState] = useState(initialState)
+
+    creating a varibale that when changed will casue a re-render of the component useState(initial value)
+
+ - Conditional rendering examples
+
+    let content;
+    if(isLoggedIn){
+        content = <AdminPanel />
+    }else{
+        content = <LoginForm />
+    }
+    return content
+
+----------------------------------------------------------------
+{
+            isLoggedIn ? (<AdminPanel/>) : (<LoginPage/>)
+        }
+-----------------------------------------------------------------
+
+
+Setting styles \
+    lastly there will be times when you need ot use js to pass objects, it is important to remember that requires a double bracket {{...}}
+        - one of the most common instances of this is css styles and props
+        - style = {{color:blue, fontSize: '40px'}}
+
+        

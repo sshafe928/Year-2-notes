@@ -140,4 +140,28 @@ Setting styles \
         - one of the most common instances of this is css styles and props
         - style = {{color:blue, fontSize: '40px'}}
 
-        
+
+Props : storing data in components
+    -props short for properties are any setting or value that is attatched to a component
+    -these are most used to pass values down the line but can also be used just like html element properties
+    - you can give these props any name and any value
+    - the better you name it rhe more useful it is
+
+Destructuring props
+    - if you have a lot of information you can destructure props tp save space
+    - <Question key={data.id} {...data} />
+
+Mapping Arrays
+    -when there are several items in an array you can loop through all of them using .map 
+    {questions.map((question)=> {
+        return(
+            <Question key={question.id} {...question} />
+        )
+    })}
+
+
+Using Props:
+    -using props once they are pased down is as simple as adding the name of the prop to the component parameters
+    - we use the {...} to immediatly deconstruct it for us eint he component
+    - after accepting the props you can use them as variables
+    - this is importnant when we are mapping using the same variables as different values
